@@ -25,7 +25,7 @@ No frameworks. No shortcuts. Just careful UI polish.
 ## 🔗 Live Demo
 
 Try it here:  
-👉 https://gautamsharma.github.io/cupertino-date-picker/
+👉 [https://gautamsharma.github.io/cupertino-date-picker/](https://gautammsharma.github.io/cupertino-date-picker/)
 
 _(Best experienced on mobile or with a trackpad)_
 
