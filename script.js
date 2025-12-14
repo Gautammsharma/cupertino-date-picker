@@ -1,6 +1,6 @@
 const wheels = document.querySelectorAll('.wheel')
 const output = document.getElementById('output')
-const ITEM_HEIGHT = 44
+const ITEM_HEIGHT = window.innerWidth < 768 ? 56 : 44
 const SNAP_DURATION = 260
 const SNAP_EASE = 'cubic-bezier(0.22, 1, 0.36, 1)' // iOS-like
 
@@ -89,3 +89,4 @@ function snapWheel(wheel) {
     behavior: 'smooth',
   })
 }
+
