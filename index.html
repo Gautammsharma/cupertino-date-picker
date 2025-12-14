@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Date Wheel Picker</title>
+  <title>Apple Style Date Picker</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="date-picker">
-    <div class="controls">
-      <div class="control control--day"></div>
-      <div class="control control--month"></div>
-      <div class="control control--year"></div>
-    </div>
+<div class="picker">
+  <div class="wheels">
+    <div class="wheel" data-type="day"></div>
+    <div class="wheel" data-type="month"></div>
+    <div class="wheel" data-type="year"></div>
 
-    <input type="date" class="date-input" />
+    <div class="highlight"></div>
   </div>
 
-  <script src="script.js"></script>
+  <div class="date-output">
+  <span id="output"></span>
+</div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
