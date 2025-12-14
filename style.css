@@ -28,24 +28,25 @@ body {
 }
 
 .wheel {
-  width: 90px;
+  width: var(--wheel-width);
   height: 220px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
-  padding: 88px 0;
+  padding: calc(var(--item-height) * 2) 0;
 }
+
 
 .wheel::-webkit-scrollbar {
   display: none;
 }
 
 .item {
-  height: 44px;
+  height: var(--item-height);
   display: grid;
   place-items: center;
   scroll-snap-align: center;
-  font-size: 17px;
+  font-size: var(--font-size);
 
   opacity: 0.25;
   transform: scale(0.85);
@@ -56,6 +57,7 @@ body {
     transform 0.18s ease,
     filter 0.18s ease;
 }
+
 
 .item.active {
   opacity: 1;
@@ -116,4 +118,34 @@ input {
 
 .date-output span {
   display: inline-block;
+}
+
+:root {
+  --item-height: 44px;
+  --wheel-width: 90px;
+  --font-size: 17px;
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --item-height: 56px;   /* bigger touch targets */
+    --wheel-width: 110px;  /* wider wheels */
+    --font-size: 20px;     /* readable text */
+  }
+
+  .wheels {
+    gap: 16px;
+  }
+
+  .highlight {
+    height: var(--item-height);
+    border-radius: 16px;
+  }
+
+  .date-output {
+    font-size: 18px;
+    padding: 16px 26px;
+    border-radius: 16px;
+  }
 }
