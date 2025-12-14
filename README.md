@@ -23,7 +23,7 @@ It focuses on **smooth scrolling**, **progressive blur**, and **pixel-accurate U
 ## 🎥 Demo
 
 🔗 **Live Demo:**  
-https://gautamsharma.github.io/cupertino-date-picker/
+[https://gautamsharma.github.io/cupertino-date-picker/](https://gautammsharma.github.io/cupertino-date-picker/)
 
 > _(Tip: Add a GIF or screen recording here for even better presentation)_
 
